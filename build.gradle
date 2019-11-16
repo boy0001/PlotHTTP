@@ -18,20 +18,19 @@ repositories {
     flatDir {dirs 'lib'}
     maven {url "https://repo.spongepowered.org/maven"}
     maven {url "http://ci.emc.gs/nexus/content/groups/aikar/" }
-    maven {url "https://hub.spigotmc.org/nexus/content/groups/public/"}
+    maven {url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"}
     maven {url "http://repo.mcstats.org/content/repositories/public"}
     maven {url "http://maven.sk89q.com/repo/"}
     maven {url "http://repo.maven.apache.org/maven2"}
-    maven {url "http://ci.athion.net/job/PlotSquared/ws/mvn/"}
+    maven {url "http://ci.athion.net/job/PlotSquared-Legacy/ws/mvn/"}
     maven {url "http://ci.athion.net/job/FastAsyncWorldEdit/ws/mvn/"}
-    maven {url "http://ci.regularbox.com/plugin/repository/everything/"}
     maven {url "http://maven.sk89q.com/artifactory/repo/"}
     maven {url "http://empcraft.com/maven2"}
 }
 
 dependencies {
-    compile name: 'FastAsyncWorldEdit'
-    compile name: 'PlotSquared'
+    compile 'com.boydti:fawe-api:latest'
+    compile 'com.plotsquared:plotsquared-api:latest'
     compile 'org.spongepowered:spongeapi:6.0.0-SNAPSHOT'
     compile 'org.ajoberstar:grgit:1.7.0'
     compile 'org.bukkit.craftbukkitv1_10:craftbukkitv1_10:1.10'
